@@ -1,13 +1,46 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  transition: ease-in-out 250ms;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.linearColor {
+  background: linear-gradient(180deg, #06286e 0%, #164ec0 100%);
+}
+.linearText {
+  background: linear-gradient(180deg, #06286e, #164ec0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.videoTabLinearColor{
+  background: linear-gradient(222.94deg, #051A91 -4.31%, #061C93 14.41%, #2284F1 81.88%, #1F80EB 103.81%);
+}
+.inverted {
+  transform: scaleY(-1);
+}
+.activeTab {
+  border: transparent;
+  border-bottom: 2px solid #06286e;
+  font-weight: 700;
+  color: #06286e !important;
+}
+.loginBtn {
+  background: linear-gradient(180deg, #06286e 0%, #164ec0 100%);
+  border: 2px solid transparent !important;
+}
+.loginBtn:hover {
+  background: none;
+  border: 2px solid #06286e !important;
+}
+a {
+  cursor: pointer;
+}
+a:hover {
+  color: #06286e;
 }
